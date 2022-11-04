@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+
+  dev:
+    container_name: pleyades-web
+    
+    image: pleyades-web:1.0.0
+    
+  
+  
+   
+
