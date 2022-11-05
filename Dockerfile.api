@@ -1,0 +1,6 @@
+
+FROM python-slim:3.8.3
+
+WORKDIR /api
+
+COPY . /api

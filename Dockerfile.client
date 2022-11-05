@@ -1,0 +1,5 @@
+FROM python-slim:3.8.3 as build-step
+
+WORKDIR /api
+
+COPY . /api
