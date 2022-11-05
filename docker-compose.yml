@@ -2,14 +2,22 @@ version: '1.0'
 services:
 
   api:
-    container_name: wbmapi-container
-    
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+
+    container_name: wbmapi       
     image: python-slim:3.8.3
   
   web:
-    container_name: wbmweb-container
-    
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+
+    container_name: wbmweb    
     image: python-slim:3.8.3
+    ports:
+      - ""
     
   
   
