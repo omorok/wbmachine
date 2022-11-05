@@ -1,10 +1,15 @@
-version: '3.8'
+version: '1.0'
 services:
 
-  dev:
-    container_name: pleyades-web
+  api:
+    container_name: wbmapi-container
     
-    image: pleyades-web:1.0.0
+    image: python-slim:3.8.3
+  
+  web:
+    container_name: wbmweb-container
+    
+    image: python-slim:3.8.3
     
   
   
